@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  /* background-color: rgb(255, 255, 255); */
+  background-image: linear-gradient(to bottom right,rgb(230, 30, 123), rgba(255, 0, 0, 0.819), rgba(255, 179, 0, 0.778));
+  font-weight: 300;
+  font-size: 18px;
+  height: 60px;
+  box-shadow: 10px 0 10px gray;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  line-height: 60px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+  border-radius: 5px;
+  padding: 0px 5px 0px 5px;
+}
+#logo {
+  line-height: 60px;
+  transition: 0.3s;
+}
+#auth,
+a[id^="g_"] {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+}
+#logolink {
+  text-decoration: none;
+  color: white;
+}
+a[id^="g_"]:hover,
+#auth:hover,
+a.active {
+  color: rgb(31, 189, 58);
+  transition: 0.3s ease-in-out;
+}
+#auth:hover {
+  border-color: rgb(31, 189, 58);
+  transition: 0.3s ease-in-out;
+}
+.bar {
+  float: right;
+  margin: 14px 5% 0 0;
+  display: none;
+  border-radius: 5px;
+  font-size: 25px;
+}
+#auth {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 7px;
+}
+a[id^="g_"]::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid rgb(31, 189, 58);
+  left: 0;
+  width: 0;
+  bottom: -1.5px;
+  transition: 0.7s ease;
+}
+a[id^="g_"]:hover::after,
+a.active::after {
+  width: 100%;
+}
+#logo:hover {
+  color: rgb(31, 189, 58);
+}
+
+@media screen and (max-width: 705px) {
+  .navbar {
+    box-shadow: none;
+  }
+  .bar {
+    display: block;
+  }
+  nav ul li {
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  nav ul {
+    position: fixed;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    width: 100%;
+    margin-top: 0;
+    background-color: white;
+  }
+  #auth {
+    border: none;
+  }
+  #auth::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid rgb(31, 189, 58);
+    left: 0;
+    width: 0;
+    bottom: -1.5px;
+    transition: 0.7s ease;
+  }
+  #auth:hover::after {
+    width: 100%;
+  }
+  ul {
+    transition: 0.5s ease;
+  }
+  #navbar {
+    height: 0px;
+    overflow: hidden;
+  }
+  #navbar.active {
+    min-height: 330px;
+    overflow-y: scroll;
+  }
+}

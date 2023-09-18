@@ -1,0 +1,160 @@
+#toolbar {
+  margin-right: 40px;
+  position: absolute;
+  top: 65px;
+  right: 4px;
+}
+
+#nav_img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 5px 10px grey;
+}
+
+#nav_img:hover{
+  box-shadow: 2px 5px 10px rgb(31, 189, 58);
+}
+
+#wrapper {
+  float: right;
+  min-width: 60%;
+  box-shadow: 2px 5px 10px grey;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+#toolbar_profile {
+  border-bottom: 5px solid;
+}
+
+#toolbar_name {
+  font-size: 40px;
+  float: right;
+  margin-right: 9%;
+  font-weight: bolder;
+  overflow-x: scroll;
+  max-width: 180px;
+  min-width: 50px;
+  white-space: nowrap;
+  font-family: Bahnschrift Condensed, algerian, Arial, Helvetica, sans-serif;
+}
+
+#toolbar_name:hover,#toolbar_sid:hover{
+  color:rgb(31, 189, 58);
+}
+
+#toolbar_name::-webkit-scrollbar-track {
+  background-color: rgb(202, 202, 202);
+}
+
+#toolbar_name::-webkit-scrollbar {
+  height: 3px;
+}
+
+#toolbar_name::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+#toolbar_sid {
+  font-size: 20px;
+  bottom: 80px;
+  position: relative;
+  float: right;
+  margin-right: 9%;
+  margin-bottom: -80px;
+  font-weight: bold;
+}
+
+#logout_button {
+  border: 1px solid;
+  border-radius: 15px;
+  margin-top: 20px;
+  padding: 5px;
+  width: 100%;
+  background-color: red;
+}
+
+#logout_button:hover {
+  box-shadow: 1px 1px 5px grey;
+}
+
+#logtools {
+  font-size: 25px;
+  font-weight: bolder;
+  color: white;
+}
+
+#hiddentoolbar {
+  display: none;
+}
+
+@media screen and (max-width: 705px) {
+  #navprof {
+    display: none;
+  }
+  #hiddentoolbar {
+    display: block;
+  }
+  #wrapper {
+    display: block;
+    float: none;
+    width: 100%;
+    box-shadow: none;
+  }
+  #toolbar_sid {
+    margin-right: 5%;
+  }
+  #toolbar_name {
+    max-width: 60%;
+    margin-right: 5%;
+    width:600px;
+    text-align: right;
+  }
+  #toolbar_profile {
+    margin: auto;
+    max-width: 400px;
+  }
+  #toolbar_buttons {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #logout_button {
+    margin: auto;
+    width: 50%;
+    background: none;
+    border: none;
+    min-width: 110px;
+  }
+  #logout_button:hover {
+    box-shadow: none;
+  }
+  #logtools {
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 325px) {
+  #wrapper {
+    text-align: center;
+  }
+  #toolbar_name {
+    float: none;
+    position: unset;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+  }
+  #toolbar_sid {
+    float: none;
+    position: unset;
+  }
+  #toolbar_buttons {
+    top: 520px;
+  }
+}

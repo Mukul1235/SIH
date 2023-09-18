@@ -1,0 +1,103 @@
+input[type='radio']{
+  display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100vh;
+  overflow:hidden;
+  align-items: center;
+}
+
+.cards {
+  width: 500px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  height: 525px;
+  width:80%;
+  max-width: 500px;
+}
+
+.cards label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+  height:550px;
+}
+
+.cards .card {
+  position: relative;
+  background-color: #323444;
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+
+.card .image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .image img {
+  border-radius: 5px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 50%);
+  margin-top: 23px;
+  width:40%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.card .infos {
+  display: block;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.infos span {
+  display: block;
+}
+
+.infos .name {
+  font-size: 30px;
+  color: var(--current-color1);
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  transition: all 0.6s ease;
+}
+
+.infos .lorem {
+  font-size: 15.5px;
+  color: #eceaed;
+  letter-spacing: 3px;
+}
+
+.card .btn-contact {
+  width: 100%;
+  height: 60px;
+  margin: 35px auto;
+  border-radius: 5px;
+  background-color: var(--current-color1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: 700;
+  transition: all 0.7s ease;
+}
+
+.card .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}

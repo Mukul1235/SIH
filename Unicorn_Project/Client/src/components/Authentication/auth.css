@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.form {
+  border: 1px solid rgb(3, 3, 3);
+  width: 70%;
+  margin: auto;
+  margin-top: 150px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.07);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+  background-image: linear-gradient(to bottom right,rgba(230, 30, 123, 0.5), rgba(255, 0, 0, 0.5), rgba(255, 179, 0, 0.5));
+}
+span {
+  font-family: "Permanent Marker", cursive;
+}
+.btn_auth {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#google_auth {
+  width: 90%;
+  height: 40px;
+  border-radius: 20px;
+}
+#gg {
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+#google_icon {
+  margin-top: 2px;
+  height: 25px;
+  margin-right: 20px;
+  line-height: 40px;
+}
+#authform {
+  text-align: center;
+}
+#or {
+  position: relative;
+  bottom: 14px;
+  background: rgba(255, 255, 255, 0.54);
+  font-size: 20px;
+  padding: 3px;
+  border-radius:50%;
+}
+#nxt,
+#nxt_signup {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  height: 30px;
+  width: 20%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15%;
+  padding: auto;
+  min-width: 50px;
+  text-align: center;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Arimo', sans-serif ;
+  background-image: linear-gradient(to bottom right,rgb(230, 30, 123), rgba(255, 0, 0, 0.819), rgba(255, 179, 0, 0.778));
+
+}
+#nxt_signup {
+  min-width: 75px;
+  margin-top: 3%;
+  text-align: center;
+}
+#nxt:hover,
+#nxt_signup:hover {
+  border: 1px solid black;
+  box-shadow: 1px 1px 4px gray;
+  text-align: center;
+
+}
+.Login,
+.Signup {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  
+}
+form input {
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px;
+  margin: 9px 0 9px 0;
+  width: 100%;
+  font-size: 15px;
+}
+.input label {
+  font-size: 18px;
+  font-weight: 550;
+}
+.eachange {
+  color: rgb(7, 7, 123);
+  font-weight: 600;
+  font-size: 20px;
+  float: right;
+  position: relative;
+  bottom: 37px;
+  right: 5%;
+  line-height: 20px;
+}
+#nchn {
+  display: none;
+}
+#signup {
+  font-size: 20px;
+  color: rgb(91, 91, 91);
+}
+#signup a {
+  background: none;
+  font-size: 22px;
+  color: rgb(55, 55, 223);
+  padding-left: 3px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#signup a:hover {
+  color: darkblue;
+}
+
+.login,
+.signup{
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Indie Flower', cursive;
+  color: black;
+}
+.otp {
+  display: none;
+}
+.inea,
+#otpd {
+  pointer-events: none;
+  background-color: rgba(209, 209, 209, 0.679);
+}
+.email_address {
+  width: 60%;
+  display: inline-block;
+  margin-right: 15px;
+}
+.otp_container {
+  width: 35%;
+  display: inline-block;
+}
+.otpverifier {
+  color: white;
+  background-color: rgb(33, 219, 55);
+  border-radius: 5px;
+  height: 30px;
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 3%;
+  padding: auto;
+  min-width: 90px;
+  text-align: center;
+  line-height: 30px;
+}
+.otpverifier:hover {
+  border: 1px solid black;
+  box-shadow: 1px 1px 4px gray;
+}
+#hiddenverify {
+  display: none;
+}
+#visibility {
+  visibility: hidden;
+  display: inline-block;
+  width: 60%;
+}
+#showverfiy {
+  display: block;
+}
+#showverfiydisabled {
+  display: block;
+  pointer-events: none;
+  background-color: rgba(169, 168, 168, 0.8);
+}
+.hiddenxt {
+  display: none;
+}
+#dispin {
+  display: inline;
+}
+#dispinb {
+  display: inline-block;
+}
+.username {
+  width: 100%;
+}
+.sid {
+  width: 100%;
+}
+#name {
+  display: inline-block;
+  width: 50%;
+  margin-right: 10%;
+}
+#otp_div {
+  display: inline-block;
+  width: 100%;
+}
+#password {
+  width: 60%;
+  display: inline-block;
+}
+#lblotp {
+  position: relative;
+}
